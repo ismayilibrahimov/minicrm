@@ -7,26 +7,38 @@
 
 ## Installation
 
+```bash
 git clone https://github.com/ismayilibrahimov/minicrm.git
 cd minicrm
 composer install
 php artisan key:generate
+```
 
-first create database at mysql
+create database at mysql
+
+```bash
 mysql -u root -p
-enter your password
 create database minicrm;
+```
 
-then add database credantials to .env file
+add database credentials to .env file
+
+```bash
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=minicrm
 DB_USERNAME=root
 DB_PASSWORD=yourpassword
+```
+
+## Usage
 
 run this commands at you console
+
+```bash
 php artisan migrate
 php artisan db:seed --class=UserSeeder
 php artisan storage:link
 php artisan serve
+```
