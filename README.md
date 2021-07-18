@@ -34,7 +34,7 @@ DB_PASSWORD=yourpassword
 
 ## Usage
 
-run this commands at you console
+run this commands at your console
 
 ```bash
 php artisan migrate
