@@ -18,4 +18,7 @@ return [
     'information'                   => 'Information',
     'Companies' => 'Companies',
     'Employees' => 'Employees',
+    'Language' => 'Language',
+    'en' => 'English',
+    'az' => 'Azerbaijani',
 ];

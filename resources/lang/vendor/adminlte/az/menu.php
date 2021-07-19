@@ -18,4 +18,7 @@ return [
     'information'                   => 'Information',
     'Companies' => 'Şirkətlər',
     'Employees' => 'İşçilər',
+    'Language' => 'Dil seçin',
+    'en' => 'İngiliscə',
+    'az' => 'Azərbaycanca',
 ];

@@ -32,13 +32,13 @@
         <table id="pageTable" class="table table-bordered table-hover">
             <thead>
                 <tr>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Logo</th>
-                    <th>Website</th>
-                    <th>View</th>
-                    <th>Edit</th>
-                    <th>Delete</th>
+                    <th>{{ __('admin.Name') }}</th>
+                    <th>{{ __('admin.Email') }}</th>
+                    <th>{{ __('admin.Logo') }}</th>
+                    <th>{{ __('admin.Website') }}</th>
+                    <th>{{ __('admin.View') }}</th>
+                    <th>{{ __('admin.Edit') }}</th>
+                    <th>{{ __('admin.Delete') }}</th>
                 </tr>
             </thead>
 
