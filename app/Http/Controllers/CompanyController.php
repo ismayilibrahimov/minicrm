@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\DataTables\CompanyDataTable;
 use App\Models\Company;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -9,9 +10,9 @@ use Illuminate\Support\Facades\Storage;
 class CompanyController extends Controller
 {
 
-    public function index()
+    public function index(CompanyDataTable $datatable)
     {
-        $companies = Company::paginate(10);
+        $companies = Company::all();
 
         return view('companies.index', compact('companies'));
     }

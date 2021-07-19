@@ -1,7 +1,7 @@
 ## Prerequisite
 
 -   mysql v8.0.23
--   php v8.0.8
+-   php v7.4.21
 -   composer v2.1.3
 -   node v14.16.0
 
@@ -11,6 +11,14 @@
 git clone https://github.com/ismayilibrahimov/minicrm.git
 cd minicrm
 composer install
+npm install
+npm run dev
+```
+
+create .env file by coping .env.example file.
+after that run this command
+
+```bash
 php artisan key:generate
 ```
 
