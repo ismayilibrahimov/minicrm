@@ -11,8 +11,6 @@ try {
     window.$ = window.jQuery = require('jquery');
 
     require('bootstrap');
-    require("admin-lte/plugins/datatables/jquery.dataTables");
-    require("admin-lte/plugins/datatables-bs4/js/dataTables.bootstrap4");
 } catch (e) {}
 
 /**
