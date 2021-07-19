@@ -40,6 +40,20 @@ DB_USERNAME=root
 DB_PASSWORD=yourpassword
 ```
 
+## Mail Setup
+
+add your mail credentials to .env file
+
+```bash
+MAIL_MAILER=smtp
+MAIL_HOST=smtp.gmail.com
+MAIL_PORT=587
+MAIL_USERNAME=yourmail@gmail.com
+MAIL_PASSWORD=yourpassword
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS=yourmail@gmail.com
+```
+
 ## Usage
 
 run this commands at your console

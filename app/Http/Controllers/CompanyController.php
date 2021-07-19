@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\DataTables\CompanyDataTable;
+use App\Events\CompanyCreated;
 use App\Models\Company;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -44,7 +44,13 @@ class CompanyController extends Controller
         }
 
 
-        Company::create($input);
+        $company = Company::create($input);
+
+        if ($company) {
+            event(new CompanyCreated($company->email, $company->name));
+        }
+
+
 
         return redirect()->route('companies.index')->with('success', 'Company created successfully!');
     }

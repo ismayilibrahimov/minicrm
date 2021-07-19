@@ -6,7 +6,7 @@
 @stop
 
 @section('content_header')
-<h1>Companies</h1>
+<h1>{{ __('admin.companies')}}</h1>
 @stop
 
 
@@ -14,7 +14,7 @@
 <div class="row">
     <div class="col-lg-12 margin-tb mb-5">
         <div class="pull-right">
-            <a class="btn btn-success" href="{{ route('companies.create') }}"> Create New Company</a>
+            <a class="btn btn-success" href="{{ route('companies.create') }}"> {{ __('admin.Create New Company') }}</a>
         </div>
     </div>
 </div>

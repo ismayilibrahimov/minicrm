@@ -6,7 +6,7 @@
 @stop
 
 @section('content_header')
-<h1>Companies</h1>
+<h1>{{ __('admin.employees') }}</h1>
 @stop
 
 
@@ -14,7 +14,7 @@
 <div class="row">
     <div class="col-lg-12 margin-tb mb-5">
         <div class="pull-right">
-            <a class="btn btn-success" href="{{ route('employees.create') }}"> Create New Employee</a>
+            <a class="btn btn-success" href="{{ route('employees.create') }}"> {{ __('admin.Create New Employee') }}</a>
         </div>
     </div>
 </div>
@@ -59,7 +59,7 @@
                         {{ $employee->phone }}
                     </td>
                     <td>
-                        {{ $employee->company->name }}
+                        <a href="{{ route('companies.show', $employee->company_id) }}">{{ $employee->company->name }}</a>
                     </td>
                     <td>
                         <a class="btn btn-info" href="{{ route('employees.show', $employee->id) }}">Show</a>
