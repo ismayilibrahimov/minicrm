@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Storage;
 class CompanyController extends Controller
 {
 
-    public function index(CompanyDataTable $datatable)
+    public function index()
     {
         $companies = Company::all();
 
