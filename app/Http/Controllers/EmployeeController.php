@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Company;
 use App\Models\Employee;
 use Illuminate\Http\Request;
 
@@ -10,9 +11,9 @@ class EmployeeController extends Controller
 
     public function index()
     {
-        $employees = Employee::all();
+        $companies = Company::all();
 
-        return view('employees.index', compact('employees'));
+        return view('employees.index', compact('companies'));
     }
 
 
