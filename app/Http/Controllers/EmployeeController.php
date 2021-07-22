@@ -11,17 +11,17 @@ class EmployeeController extends Controller
 
     public function index()
     {
-        $companies = Company::all();
+        $employees = Employee::all();
 
-        return view('employees.index', compact('companies'));
+        return view('employees.index', compact('employees'));
     }
 
 
     public function create()
     {
-        $employees = Employee::all();
+        $companies = Company::all();
 
-        return view('employees.create', compact('employees'));
+        return view('employees.create', compact('companies'));
     }
 
 
